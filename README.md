@@ -19,6 +19,19 @@ The repository keeps redistribution rights and provenance next to each recording
 
 See `manifest.tsv` and `sources/` for provenance and rights notes.
 
+### Historical voices
+
+The reusable historical-voice group now includes Florence Nightingale (1890),
+Ernest Shackleton (1910), the recording attributed to Walt Whitman (c. 1890),
+Thomas Edison (1888 and a later filmed speech), Alfred Tennyson (1890),
+Sigmund Freud (1938), Theodore Roosevelt (1912), William Jennings Bryan (1922),
+and Leo Tolstoy (1908).
+
+See `sources/historical-voices.md` for exact source pages, dates, attribution
+notes, and rights labels. Michel Foucault recordings are catalogued separately
+under `reference-only/`; they are not treated as public-domain fixtures.
+
+
 Run `scripts/fetch-public-audio.sh` to fetch the redistributable originals and verify the Wikimedia SHA-1 values where published.
 
 ## Restricted and reference sources
