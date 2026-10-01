@@ -5,6 +5,8 @@ on:
   push:
     paths:
       - ".github/workflows/import-public-audio.yml"
+      - "scripts/fetch-public-audio.sh"
+      - "manifest.tsv"
 
 permissions:
   contents: write
@@ -25,4 +27,5 @@ jobs:
             exit 0
           fi
           git commit -m "Import public and freely licensed sound recordings"
+          git pull --rebase origin "$GITHUB_REF_NAME"
           git push
