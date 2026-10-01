@@ -5,6 +5,8 @@ on:
   push:
     paths:
       - ".github/workflows/import-public-audio.yml"
+      - "scripts/fetch-public-audio.sh"
+      - "manifest.tsv"
 
 permissions:
   contents: write
