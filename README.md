@@ -15,10 +15,44 @@ The repository keeps redistribution rights and provenance next to each recording
 | russolo-corale | Luigi and Antonio Russolo, Corale (1921) | public domain in the U.S. |
 | russolo-serenata | Luigi and Antonio Russolo, Serenata (1921) | public domain in the U.S. |
 | touch-radio-49-a-journey-south | Chris Watson, A Journey South | reference only; copyrighted |
+| touch-radio-33-aer-without-number | AER, Without Number | reference only |
 
 See `manifest.tsv` and `sources/` for provenance and rights notes.
 
 Run `scripts/fetch-public-audio.sh` to fetch the redistributable originals and verify the Wikimedia SHA-1 values where published.
+
+## Restricted and reference sources
+
+These are intentionally kept separate from the reusable corpus.
+
+### Touch
+
+`reference-only/touch-radio-49-a-journey-south.md` identifies the Antarctic hydrophone recording discussed for Fourier tests. “Touch 33” referred to the Touch label/site; the recording itself is **Touch Radio 49**, Chris Watson's *A Journey South*. Literal Touch Radio 33 is AER's *Without Number* and has its own note.
+
+For local listening only:
+
+```sh
+sh scripts/fetch-touch-listening-references.sh --personal-listening
+```
+
+The downloaded files are ignored by git.
+
+### PennSound
+
+PennSound allows its recordings to be downloaded/distributed for **noncommercial and educational use**, while author/estate rights remain in force. Those recordings therefore do not belong in `audio/original/`.
+
+See:
+
+- `maps/pennsound-noncommercial.md`
+- `manifests/pennsound.tsv`
+
+To fetch the current nine-recording signal-processing seed set locally:
+
+```sh
+sh scripts/fetch-pennsound-noncommercial.sh --accept-noncommercial
+```
+
+Those downloads are also ignored by git.
 
 ## Consumer contract
 
